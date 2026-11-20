@@ -1,0 +1,170 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+#table_container {
+    width: 800px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0a7bbf;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 9px;
+    border: 1px solid #ddd;
+}
+
+.col_number,.col_chkbox {
+    text-align: center;
+}
+
+.col_text {
+    text-align: left;
+}
+
+th.col_text {
+    text-align: center;
+}
+#container_summary {
+    display: flex;
+    justify-content: space-between ;
+    background-color: #f2f2f2;
+    padding: 10px 10px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 13px;
+}
+#container_summary p {
+    margin: 0;
+}
+#container_summary #p3{
+    margin-right: 120px;
+}
+/* Formulaire */
+
+#form_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form_label {
+    font-size: 12px;
+    font-weight: bold;
+}
+.form_field {
+    width: 120px;
+    padding: 5px;
+}
+.btn-add {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#container_btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.btn-consol {
+    background-color: #b58b00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-del {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+/* Boutons des nouvelles fonctionnalités (Mode sombre + Validation + Réinialisation) */
+#top_controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+#themeBtn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+body.dark-mode #table_container {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+body.dark-mode th {
+    background-color: #155477;
+}
+
+body.dark-mode td {
+    background-color: #3b3b3b;
+    color: #f5f5f5;
+    border-color: #666;
+}
+
+body.dark-mode #container_summary {
+    background-color: #444;
+    color: #f5f5f5;
+    border-color: #666;
+}
+
+body.dark-mode .form_field {
+    background-color: #444;
+    color: white;
+    border: 1px solid #777;
+}
+
+body.dark-mode .form_label {
+    color: #f5f5f5;
+}
+
+body.dark-mode #themeBtn {
+    background-color: #e0b52c;
+    color: #222;
+}
